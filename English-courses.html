@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Course Details - Mentor Bootstrap Template</title>
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+  <style>
+    .banner {
+      text-align: center;
+    }
+
+    .discount {
+      background-color: #133041;
+      color: white;
+      padding: 20px 20px 30px;
+      border-radius: 5px;
+      font-size: 18px;
+      margin-bottom: 10px;
+    }
+
+   
+    .course-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .course-card {
+     
+      border: 1px solid #ddd;
+      border-radius: 10px;
+      padding: 20px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      font-family: Arial, sans-serif;
+      background-color: #fff;
+      margin: 10px;
+    }
+
+    .course-card h2 {
+      color: #ff3366;
+      font-size: 24px;
+      margin-bottom: 20px;
+    }
+
+    .course-card p {
+      margin: 10px 0;
+      font-size: 16px;
+    }
+
+    .course-card .icon {
+      margin-right: 10px;
+    }
+
+    .course-card .enroll-btn {
+      display: inline-block;
+      padding: 10px 20px;
+      background-color: #ff3366;
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+      margin-top: 20px;
+    }
+
+    .course-name {
+      color: #EA2451;
+      font-size: 24px;
+      font-weight: bold;
+    }
+    /* General Styles */
+
+
+/* Responsive Styles */
+@media (max-width: 600px) {
+    .course-container {
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center; 
+        justify-items: center;
+        text-align: center;
+        margin-left: 80px;/* Stack items vertically */
+        /* Center items horizontally */
+    }
+
+    .course-card {
+        width: 150%; /* Make each card take 90% of the container's width */
+        max-width: 300px; /* Set a maximum width for the cards */
+        margin: 15px 0; /* Add vertical margin for spacing */
+        padding: 20px; /* Increase padding for a larger card */
+        border-radius: 10px; /* Optional: Make corners more rounded */
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      /* Optional: Add a subtle shadow */
+    }
+
+    .course-card h2 {
+        font-size: 22px; /* Increase font size for course titles */
+    }
+
+    .course-card p {
+        font-size: 16px; /* Increase font size for paragraphs */
+    }
+
+    .enroll-btn {
+        padding: 12px 20px; /* Increase button padding for a larger touch target */
+        font-size: 16px; /* Increase button font size */
+    }
+}
+  </style>
+  
+
+
+
+
+  <!-- =======================================================
+  * Template Name: Mentor
+  * Template URL: https://bootstrapmade.com/mentor-free-education-bootstrap-theme/
+  * Updated: Aug 07 2024 with Bootstrap v5.3.3
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body class="course-details-page">
+
+  <header id="header" class="header d-flex align-items-center sticky-top">
+    <div class="container-fluid container-xl position-relative d-flex align-items-center">
+      <img src="assets/img/FLA logo.png" width="90px" style="margin: 8px;">
+      <a href="index.html" class="logo d-flex align-items-center me-auto">
+        <!-- Uncomment the line below if you also wish to use an image logo -->
+        <!-- <img src="assets/img/logo.png" alt=""> -->
+
+        <h1 class="sitename"><span style="color: #EA2451;"> F</span>LACADEMY</h1>
+      </a>
+
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="index.html" class="active">Home<br></a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="courses.html">Courses</a></li>
+        
+        
+        
+        
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav>
+
+    </div>
+  </header>
+  <main class="main">
+
+    <!-- Page Title -->
+    <div class="page-title" data-aos="fade">
+      <div class="heading">
+        <div class="container">
+          <div class="row d-flex justify-content-center text-center">
+            <div class="col-lg-8">
+              <h1 style="font-weight: bold; color:#133041">English courses</h1>
+              <p class="mb-1" style="font-size: 30px;">If you want to unlock your potential and grow your future
+                leadership skills, join our academy.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <nav class="breadcrumbs">
+        <div class="container">
+          <ol>
+            <li><a href="index.html">Home</a></li>
+            <li class="current">Course Details</li>
+          </ol>
+        </div>
+      </nav>
+    </div><!-- End Page Title -->
+
+    
+    
+      <section id="tabs" class="tabs section">
+
+        <div class="course-container">
+
+          <div style="max-width: 50%; max-height: 50%;">  <div class="course-card">
+            <h2>Spoken English (Beginner)</h2>
+            <p><span class="icon">📅</span> <strong>Duration:</strong> 16 Weeks</p>
+            <p><span class="icon">🎓</span> <strong>Levels:</strong> 1-3</p>
+            <p><span class="icon">👶</span> <strong>Eligibility:</strong> Age 8-16</p>
+            <p><span class="icon">💰</span> <strong>Fees:</strong> Rs.1500/- per month</p><a href="Form.html"
+            class="enroll-btn">Enroll Now</a>
+          </div>
+          <div class="course-card">
+            <h2>Spoken English (Beginner)</h2>
+            <p><span class="icon">📅</span> <strong>Duration:</strong> 18 Weeks</p>
+            <p><span class="icon">🎓</span> <strong>Levels:</strong> 1-3</p>
+            <p><span class="icon">👶</span> <strong>Eligibility:</strong> Age 17-25</p>
+            <p><span class="icon">💰</span> <strong>Fees:</strong> Rs.2000/- per month</p> <a href="Form.html"
+              class="enroll-btn">Enroll Now</a>
+          </div> 
+         
+        </div>
+
+        <div style="max-width: 50%; max-height: 50%;">
+          <div class="course-card">
+            <h2>Spoken English (Intermediate)</h2>
+            <p><span class="icon">📅</span> <strong>Duration:</strong> 18 Weeks</p>
+            <p><span class="icon">🎓</span> <strong>Levels:</strong> 4-6</p>
+            <p><span class="icon">👶</span> <strong>Eligibility:</strong> Age 8-16</p>
+            <p><span class="icon">💰</span> <strong>Fees:</strong> Rs.1500/- per month</p><a href="Form.html"
+            class="enroll-btn">Enroll Now</a>
+          </div>
+          <div class="course-card">
+            <h2>Spoken English (Intermediate)</h2>
+            <p><span class="icon">📅</span> <strong>Duration:</strong> 18 Weeks</p>
+            <p><span class="icon">🎓</span> <strong>Levels:</strong> 4-6</p>
+            <p><span class="icon">👶</span> <strong>Eligibility:</strong> Age 17-25</p>
+            <p><span class="icon">💰</span> <strong>Fees:</strong> Rs.2000/- per month</p> <a href="Form.html"
+            class="enroll-btn">Enroll Now</a>
+          </div>
+
+        </div>
+
+        <div style="max-width: 50%; max-height: 50%;">
+          <div class="course-card">
+            <h2>Spoken English (Advance)</h2>
+            <p><span class="icon">📅</span> <strong>Duration:</strong> 18 Weeks</p>
+            <p><span class="icon">🎓</span> <strong>Levels:</strong> 7-9</p>
+            <p><span class="icon">👶</span> <strong>Eligibility:</strong> Age 8-16</p>
+            <p><span class="icon">💰</span> <strong>Fees:</strong> Rs.1500/- per month</p><a href="Form.html"
+            class="enroll-btn">Enroll Now</a>
+          </div>
+          <div class="course-card">
+            <h2>Spoken English (Advance)</h2>
+            <p><span class="icon">📅</span> <strong>Duration:</strong> 16 Weeks</p>
+            <p><span class="icon">🎓</span> <strong>Levels:</strong> 1-3</p>
+            <p><span class="icon">👶</span> <strong>Eligibility:</strong> Age 17-25</p>
+            <p><span class="icon">💰</span> <strong>Fees:</strong> Rs.2000/- per month</p> <a href="Form.html"
+            class="enroll-btn">Enroll Now</a>
+          </div>
+        </div>
+        </div>
+      </section>
+
+
+
+
+     
+  </main> 
+
+  <footer id="footer" class="footer position-relative light-background">
+
+    <div class="container footer-top">
+      <div class="row gy-4">
+        <div class="col-lg-4 col-md-6 footer-about">
+          <a class="logo d-flex align-items-center">
+            <span class="sitename">Address </span>
+          </a>
+          <div class="footer-contact pt-3">
+            <p>Future Leaders Academy Sameena Complex, 2nd Floor, Azad nagar 1st Cross, Bhatkal</p>
+            <p>Landmark: Opposite Huda Masjid</p>
+            <p class="mt-3"><strong>Phone:</strong> <span style="font-family: Arial, Helvetica, sans-serif;">+91 988 650 5840</span></p>
+            <p><strong>Email:</strong> <span>info@flacademy.co.in</span></p>
+          </div>
+          <div class=" d-flex mt-4">
+            <a></i></a>
+            <a></i></a>
+            <a></i></a>
+            <a></i></a>
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-md-3 footer-links">
+          <h4>Useful Links</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About us</a></li>
+            <li><a href="courses.html">Courses</a></li>
+            <li><a href="contact.html">Contact</a></li>
+     
+          </ul>
+        </div>
+
+        <div class="col-lg-2 col-md-3 footer-links">
+          <h4>Our Services</h4>
+          <ul>
+            <li><a href="Arabic-courses.html">Arabic Courses</a></li>
+            <li><a href="computer-courses.html">Computer Courses</a></li>
+            <li><a href="English-courses.html">English Courses</a></li>
+
+          </ul>
+        </div>
+
+        <div class="col-lg-4 col-md-12 footer-newsletter">
+          <img src="assets/img/FLA logo.png" width="100px" alt="" >
+          <p style="padding: 10px;">At FL Academy we provide organizations and individuals with a complete and
+            comprehensive suite of training offerings that include instructor led, e-learning and blended learning
+            solutions.</p>
+
+        </div>
+
+      </div>
+    </div>
+
+    <div class="container copyright text-center mt-4" style="background-color: #EA2451;">
+      <p>© <span>Copyright</span> <strong class="px-1 sitename">2024-2025 FL Academy</strong> <span>All Rights
+          Reserved</span></p>
+      <div class="credits">
+       
+      </div>
+    </div>
+
+  </footer>
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i
+      class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
